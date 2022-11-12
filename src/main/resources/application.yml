@@ -1,0 +1,17 @@
+telegram:
+  token: <token>
+  name: eva_guardian_bot
+spring:
+  r2dbc:
+    url: r2dbc:h2:file:///./h2db/db
+    username: sa
+    password:
+    initialization-mode: always
+    h2.console:
+      enabled: true
+      path: /h2
+  thymeleaf:
+    reactive:
+      max-chunk-size: 8192
+server:
+  port: 80
